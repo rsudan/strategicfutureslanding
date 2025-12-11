@@ -97,13 +97,13 @@ const TOOLS = [
   {
     id: 'trend-radar',
     phaseId: 1,
-    name: "Trend Radar",
+    name: "Trends Radar",
     subtitle: "Trend tracking & visualization",
     description: "Visualize emerging trends across technology, society, economy, and environment. Map by time horizon and impact to prioritize those most relevant to your context.",
     icon: Radar,
     time: "2 hours",
     participants: "5-15",
-    url: "https://strategic-foresight-12sl.bolt.host/"
+    url: "https://wbtrendsradar.netlify.app/"
   },
   // Phase 2: Deep Analysis
   {
