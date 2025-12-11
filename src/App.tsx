@@ -92,7 +92,7 @@ const TOOLS = [
     icon: Activity,
     time: "30-60 mins",
     participants: "3-10",
-    url: "https://world-bank-weak-sign-gnn3.bolt.host/"
+    url: "https://wbweaksignals.netlify.app/"
   },
   {
     id: 'trend-radar',
