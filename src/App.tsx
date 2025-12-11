@@ -234,7 +234,8 @@ const TOOLS = [
     description: "Helps teams craft compelling narratives for their innovations that are grounded in robust foresight.",
     icon: Users,
     time: "2 hours",
-    participants: "Innovators"
+    participants: "Innovators",
+    url: "https://wbmultiagent.netlify.app/"
   }
 ];
 
