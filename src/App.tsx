@@ -170,7 +170,7 @@ const TOOLS = [
     icon: TrendingUp,
     time: "3 hours",
     participants: "10-25",
-    url: "https://gemini.google.com/share/c1c5a49f0b3d"
+    url: "https://threehorizons.netlify.app/"
   },
   // Phase 5: Scenario Development
   {
