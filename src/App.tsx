@@ -147,7 +147,7 @@ const TOOLS = [
     icon: Circle,
     time: "45 mins",
     participants: "3-8",
-    url: "https://ai.studio/apps/drive/19yk0doyHBfLPryLgJX2ju3xd2qu1oyTy"
+    url: "https://futureswheel.netlify.app/"
   },
   // Phase 4: Futures Visualization
   {
