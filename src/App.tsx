@@ -159,7 +159,7 @@ const TOOLS = [
     icon: Maximize2,
     time: "1 hour",
     participants: "5-20",
-    url: "https://gemini.google.com/share/cc8d7aca7e9d"
+    url: "https://futurescone.netlify.app/"
   },
   {
     id: 'three-horizons',
