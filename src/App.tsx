@@ -114,7 +114,8 @@ const TOOLS = [
     description: "Deconstructs issues into four layers: Litany, Systemic Causes, Worldview, and Metaphor, to find deep leverage points for transformation.",
     icon: Layers,
     time: "3 hours",
-    participants: "4-8"
+    participants: "4-8",
+    url: "https://causallayeredanalysis.netlify.app/"
   },
   {
     id: 'futures-triangle',
