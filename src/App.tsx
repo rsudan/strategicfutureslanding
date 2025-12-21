@@ -125,7 +125,7 @@ const TOOLS = [
     icon: Triangle,
     time: "1 hour",
     participants: "3-12",
-    url: "https://ai.studio/apps/drive/1lumu4ZopUIn4174K1uIPRxgPOyyPBXy1"
+    url: "https://futurestriangle.netlify.app/"
   },
   {
     id: 'cross-impact',
