@@ -136,7 +136,8 @@ const TOOLS = [
     description: "Analyzes how different trends and drivers might influence each other, identifying key drivers that have systemic impact.",
     icon: Grid,
     time: "2-4 hours",
-    participants: "Expert Group"
+    participants: "Expert Group",
+    url: "https://crossimpact.netlify.app/"
   },
   // Phase 3: Consequence Mapping
   {
