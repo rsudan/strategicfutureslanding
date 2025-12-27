@@ -207,17 +207,6 @@ const TOOLS = [
     participants: "Strategy Team"
   },
   {
-    id: 'innovation-analyzer',
-    phaseId: 6,
-    name: "Innovation Analyzer",
-    subtitle: "Innovation assessment",
-    description: "Assesses innovation portfolios against the organization's strategic foresight goals.",
-    icon: Lightbulb,
-    time: "2 hours",
-    participants: "Managers",
-    url: "https://wbmultiagent.netlify.app/"
-  },
-  {
     id: 'concept-analyzer',
     phaseId: 6,
     name: "Concept Analyzer",
