@@ -206,7 +206,8 @@ const TOOLS = [
     description: "Tests current strategies against multiple future scenarios to ensure they are robust and resilient under different conditions.",
     icon: Wind,
     time: "4 hours",
-    participants: "Strategy Team"
+    participants: "Strategy Team",
+    url: "https://windtunnel.netlify.app/"
   },
   {
     id: 'concept-analyzer',
