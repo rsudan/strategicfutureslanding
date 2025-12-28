@@ -194,7 +194,8 @@ const TOOLS = [
     description: "Starts with a preferred future and works backward to identify the steps required today to achieve it.",
     icon: ChevronsRight,
     time: "4 hours",
-    participants: "5-15"
+    participants: "5-15",
+    url: "https://backcasting.netlify.app/"
   },
   // Phase 6: Strategy & Action
   {
