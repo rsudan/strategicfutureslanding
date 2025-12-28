@@ -217,7 +217,8 @@ const TOOLS = [
     description: "Evaluates specific project concepts for future-readiness and alignment with long-term trends.",
     icon: Search,
     time: "1 hour",
-    participants: "Project Team"
+    participants: "Project Team",
+    url: "https://futurereadiness.netlify.app/"
   },
   {
     id: 'pitch-studio',
