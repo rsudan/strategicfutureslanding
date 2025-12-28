@@ -239,55 +239,55 @@ const Modal = ({ isOpen, onClose, tool, phase }) => {
   if (!isOpen || !tool) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="bg-white rounded-xl shadow-2xl w-full max-w-2xl overflow-hidden animate-in zoom-in-95 duration-200">
-        <div className={`p-6 ${phase?.color || 'bg-gray-100'} flex justify-between items-start`}>
-          <div className="flex items-center gap-3">
-            <div className="p-3 bg-white/50 rounded-lg backdrop-blur-sm">
-              <tool.icon className="w-8 h-8 opacity-80" />
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-300">
+      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden animate-in zoom-in-95 duration-300 border border-slate-200">
+        <div className={`p-8 ${phase?.color || 'bg-gray-100'} flex justify-between items-start`}>
+          <div className="flex items-center gap-4">
+            <div className="p-4 bg-white/70 rounded-xl backdrop-blur-sm shadow-lg">
+              <tool.icon className="w-10 h-10 opacity-90" />
             </div>
             <div>
-              <div className="text-xs font-bold uppercase tracking-wider opacity-70 mb-1">
+              <div className="text-xs font-bold uppercase tracking-wider opacity-70 mb-2">
                 Phase {phase?.id}: {phase?.title}
               </div>
-              <h2 className="text-2xl font-bold text-gray-900">{tool.name}</h2>
+              <h2 className="text-3xl font-bold text-gray-900">{tool.name}</h2>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-black/10 rounded-full transition-colors"
+            className="p-2.5 hover:bg-black/10 rounded-full transition-all hover:scale-110"
           >
             <X className="w-6 h-6" />
           </button>
         </div>
 
         <div className="p-8">
-          <h3 className="text-xl font-medium text-gray-900 mb-2">{tool.subtitle}</h3>
-          <p className="text-gray-600 leading-relaxed mb-8">
+          <h3 className="text-xl font-semibold text-gray-900 mb-3">{tool.subtitle}</h3>
+          <p className="text-gray-600 leading-relaxed mb-8 text-base">
             {tool.description}
           </p>
 
-          <div className="grid grid-cols-2 gap-4 mb-8">
-            <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
-              <div className="flex items-center gap-2 text-gray-500 mb-1">
-                <Clock className="w-4 h-4" />
-                <span className="text-xs font-semibold uppercase">Duration</span>
+          <div className="grid grid-cols-2 gap-5 mb-8">
+            <div className="p-5 bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl border border-slate-200 shadow-sm">
+              <div className="flex items-center gap-2 text-gray-600 mb-2">
+                <Clock className="w-5 h-5" />
+                <span className="text-xs font-bold uppercase tracking-wider">Duration</span>
               </div>
-              <div className="font-medium text-gray-900">{tool.time}</div>
+              <div className="font-semibold text-gray-900 text-lg">{tool.time}</div>
             </div>
-            <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
-              <div className="flex items-center gap-2 text-gray-500 mb-1">
-                <Users className="w-4 h-4" />
-                <span className="text-xs font-semibold uppercase">Participants</span>
+            <div className="p-5 bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl border border-slate-200 shadow-sm">
+              <div className="flex items-center gap-2 text-gray-600 mb-2">
+                <Users className="w-5 h-5" />
+                <span className="text-xs font-bold uppercase tracking-wider">Participants</span>
               </div>
-              <div className="font-medium text-gray-900">{tool.participants}</div>
+              <div className="font-semibold text-gray-900 text-lg">{tool.participants}</div>
             </div>
           </div>
 
-          <div className="flex justify-end gap-3">
+          <div className="flex justify-end gap-4">
             <button
               onClick={onClose}
-              className="px-5 py-2.5 text-gray-600 font-medium hover:bg-gray-100 rounded-lg transition-colors"
+              className="px-6 py-3 text-gray-600 font-semibold hover:bg-gray-100 rounded-xl transition-colors"
             >
               Close
             </button>
@@ -297,10 +297,10 @@ const Modal = ({ isOpen, onClose, tool, phase }) => {
                   window.open(tool.url, '_blank');
                 }
               }}
-              className="px-5 py-2.5 bg-[#002244] text-white font-medium rounded-lg hover:bg-[#004488] transition-colors flex items-center gap-2 shadow-lg shadow-blue-900/20"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all flex items-center gap-2 shadow-lg shadow-blue-500/40 hover:shadow-xl hover:scale-105"
             >
               Launch Tool
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>
@@ -338,20 +338,20 @@ export default function App() {
   ).length;
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50 font-sans text-slate-900">
 
       {/* --- Navbar --- */}
-      <nav className="bg-[#004488] text-white sticky top-0 z-40 shadow-md">
+      <nav className="bg-gradient-to-r from-[#003366] via-[#004488] to-[#0055aa] text-white sticky top-0 z-40 shadow-lg backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-blue-500 rounded-sm flex items-center justify-center font-bold text-white text-xl shadow-inner">
+              <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-blue-900/30 transform hover:scale-105 transition-transform">
                 WB
               </div>
               <div>
                 <span className="font-bold text-lg tracking-tight">Innovation Labs</span>
-                <span className="mx-2 text-blue-400">|</span>
-                <span className="text-blue-100 font-light">Foresight Toolkit</span>
+                <span className="mx-2 text-blue-300">|</span>
+                <span className="text-blue-100 font-medium">Foresight Toolkit</span>
               </div>
             </div>
           </div>
@@ -359,24 +359,26 @@ export default function App() {
       </nav>
 
       {/* --- Hero --- */}
-      <div className="bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#002244] mb-4 tracking-tight">
-              Strategic Foresight Tools
+      <div className="relative bg-white border-b border-slate-200 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-slate-50/50 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-400/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+          <div className="max-w-3xl animate-in">
+            <h1 className="text-5xl md:text-6xl font-bold text-[#002244] mb-6 tracking-tight leading-tight">
+              Strategic Foresight <span className="text-gradient">Tools</span>
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-slate-600 leading-relaxed mb-10 font-light">
               A comprehensive suite of tools designed to help World Bank teams navigate uncertainty, anticipate future challenges, and design robust strategies for development impact.
             </p>
 
             {/* Search Bar */}
             <div className="relative max-w-xl">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                 <Search className="h-5 w-5 text-slate-400" />
               </div>
               <input
                 type="text"
-                className="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm"
+                className="block w-full pl-12 pr-4 py-4 border border-slate-200 rounded-xl leading-5 bg-white/80 backdrop-blur-sm placeholder-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all shadow-lg shadow-slate-200/50 hover:shadow-xl"
                 placeholder="Search for a tool (e.g., 'Scenario Engine', 'Radar')..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -390,20 +392,20 @@ export default function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
         {/* Phase Filter / Navigation */}
-        <div className="mb-12">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-[#002244]">Jump to Phase</h2>
+        <div className="mb-16">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-xl font-bold text-[#002244]">Jump to Phase</h2>
             {activePhase && (
               <button
                 onClick={() => setActivePhase(null)}
-                className="text-sm text-blue-600 hover:text-blue-800 font-medium"
+                className="text-sm text-blue-600 hover:text-blue-800 font-semibold transition-colors"
               >
                 Show All Phases
               </button>
             )}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {PHASES.map((phase) => {
               const isActive = activePhase === phase.id;
               return (
@@ -411,14 +413,14 @@ export default function App() {
                   key={phase.id}
                   onClick={() => setActivePhase(isActive ? null : phase.id)}
                   className={`
-                    relative flex flex-col items-center justify-center p-4 rounded-xl border text-center transition-all duration-200
+                    relative flex flex-col items-center justify-center p-5 rounded-xl border text-center transition-all duration-300 transform
                     ${isActive
-                      ? `${phase.color} border-transparent ring-2 ring-offset-2 ring-blue-500 shadow-md`
-                      : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:shadow-sm hover:bg-slate-50'
+                      ? `${phase.color} border-transparent ring-2 ring-offset-2 ring-blue-500 shadow-lg scale-105`
+                      : 'bg-white border-slate-200 text-slate-600 hover:border-blue-200 hover:shadow-lg hover:scale-105 hover:-translate-y-1'
                     }
                   `}
                 >
-                  <phase.icon className={`w-6 h-6 mb-2 ${isActive ? 'opacity-100' : 'opacity-60'}`} />
+                  <phase.icon className={`w-7 h-7 mb-2 transition-opacity ${isActive ? 'opacity-100' : 'opacity-60'}`} />
                   <span className="text-xs font-bold uppercase tracking-wider mb-1 opacity-70">Phase {phase.id}</span>
                   <span className={`text-sm font-semibold leading-tight ${isActive ? '' : 'text-slate-800'}`}>
                     {phase.title}
@@ -430,14 +432,14 @@ export default function App() {
         </div>
 
         {/* Tools by Category */}
-        <div className="space-y-12">
+        <div className="space-y-16">
           {totalMatchingTools === 0 ? (
-            <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-slate-300">
-              <div className="mx-auto w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mb-4">
-                <Search className="w-8 h-8 text-slate-400" />
+            <div className="text-center py-24 bg-white rounded-2xl border-2 border-dashed border-slate-300 shadow-sm">
+              <div className="mx-auto w-20 h-20 bg-gradient-to-br from-slate-100 to-slate-200 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                <Search className="w-10 h-10 text-slate-400" />
               </div>
-              <h3 className="text-lg font-medium text-slate-900">No tools found</h3>
-              <p className="text-slate-500">Try adjusting your search or filter.</p>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">No tools found</h3>
+              <p className="text-slate-500 text-lg">Try adjusting your search or filter.</p>
             </div>
           ) : (
             displayPhases.map((phase) => {
@@ -445,41 +447,41 @@ export default function App() {
               if (phaseTools.length === 0) return null; // Hide phase if no matching tools found in search
 
               return (
-                <div key={phase.id} className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                <div key={phase.id} className="animate-in">
                   {/* Category Header */}
-                  <div className={`flex items-center gap-4 mb-6 pb-4 border-b ${phase.borderColor}`}>
-                    <div className={`p-3 rounded-lg ${phase.color}`}>
-                      <phase.icon className="w-6 h-6" />
+                  <div className={`flex items-center gap-5 mb-8 pb-5 border-b-2 ${phase.borderColor}`}>
+                    <div className={`p-4 rounded-xl ${phase.color} shadow-md`}>
+                      <phase.icon className="w-7 h-7" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
-                        <span className="opacity-40 text-lg font-medium">0{phase.id}.</span> {phase.title}
+                      <h2 className="text-3xl font-bold text-slate-900 flex items-center gap-3 mb-1">
+                        <span className="opacity-40 text-xl font-semibold">0{phase.id}.</span> {phase.title}
                       </h2>
-                      <p className="text-slate-500">{phase.description}</p>
+                      <p className="text-slate-600 text-base">{phase.description}</p>
                     </div>
                   </div>
 
                   {/* Tools Grid for this Phase */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {phaseTools.map((tool) => (
                       <div
                         key={tool.id}
                         onClick={() => setSelectedTool(tool)}
-                        className="group bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col h-full"
+                        className="group bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col h-full card-shine"
                       >
-                        <div className={`h-1.5 w-full ${phase.color.split(' ')[0]}`} />
-                        <div className="p-6 flex-1 flex flex-col">
-                          <h3 className="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors">
+                        <div className={`h-2 w-full ${phase.color.split(' ')[0]}`} />
+                        <div className="p-7 flex-1 flex flex-col">
+                          <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
                             {tool.name}
                           </h3>
-                          <p className="text-sm font-medium text-blue-600 mb-3">
+                          <p className="text-sm font-semibold text-blue-600 mb-4">
                             {tool.subtitle}
                           </p>
-                          <p className="text-sm text-slate-500 leading-relaxed mb-4 line-clamp-3">
+                          <p className="text-sm text-slate-600 leading-relaxed mb-6 line-clamp-3 flex-grow">
                             {tool.description}
                           </p>
 
-                          <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-end">
+                          <div className="mt-auto pt-5 border-t border-slate-100 flex items-center justify-end">
                             <button
                               onClick={(e) => {
                                 if (tool.url) {
@@ -487,7 +489,7 @@ export default function App() {
                                   window.open(tool.url, '_blank');
                                 }
                               }}
-                              className="px-4 py-2 bg-[#C2E2FA] text-slate-700 text-sm font-medium rounded-lg hover:bg-[#A8D3F7] transition-colors flex items-center gap-2 shadow-sm"
+                              className="px-5 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all flex items-center gap-2 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-600/40 transform hover:scale-105"
                             >
                               Launch Tool
                               <ArrowRight className="w-4 h-4" />
@@ -505,13 +507,13 @@ export default function App() {
       </main>
 
       {/* --- Footer --- */}
-      <footer className="bg-slate-50 border-t border-slate-200 mt-auto py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
-          <p className="mb-2">© {new Date().getFullYear()} World Bank Group. All rights reserved.</p>
-          <div className="space-x-4">
-            <a href="#" className="hover:text-[#002244]">Legal</a>
-            <a href="#" className="hover:text-[#002244]">Privacy Notice</a>
-            <a href="#" className="hover:text-[#002244]">Access to Information</a>
+      <footer className="relative bg-gradient-to-br from-slate-50 to-slate-100 border-t border-slate-200 mt-20 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-600 text-sm">
+          <p className="mb-3 font-medium">© {new Date().getFullYear()} World Bank Group. All rights reserved.</p>
+          <div className="space-x-6">
+            <a href="#" className="hover:text-[#004488] transition-colors font-medium">Legal</a>
+            <a href="#" className="hover:text-[#004488] transition-colors font-medium">Privacy Notice</a>
+            <a href="#" className="hover:text-[#004488] transition-colors font-medium">Access to Information</a>
           </div>
         </div>
       </footer>
