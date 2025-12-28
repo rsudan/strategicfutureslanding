@@ -184,7 +184,7 @@ const TOOLS = [
     icon: BookOpen,
     time: "1-2 days",
     participants: "10-30",
-    url: "https://foresight-scenario-e-fil3.bolt.host/"
+    url: "https://scenarioplanning.netlify.app/"
   },
   {
     id: 'backcasting',
