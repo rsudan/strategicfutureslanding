@@ -349,9 +349,9 @@ export default function App() {
                 WB
               </div>
               <div>
-                <span className="font-bold text-lg tracking-tight">Innovation Labs</span>
+                <span className="font-bold text-lg tracking-tight">Digital Innovation & Transformation</span>
                 <span className="mx-2 text-blue-300">|</span>
-                <span className="text-blue-100 font-medium">Foresight Toolkit</span>
+                <span className="text-blue-100 font-medium">Foresight Tools</span>
               </div>
             </div>
           </div>
@@ -509,12 +509,7 @@ export default function App() {
       {/* --- Footer --- */}
       <footer className="relative bg-gradient-to-br from-slate-50 to-slate-100 border-t border-slate-200 mt-20 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-600 text-sm">
-          <p className="mb-3 font-medium">© {new Date().getFullYear()} World Bank Group. All rights reserved.</p>
-          <div className="space-x-6">
-            <a href="#" className="hover:text-[#004488] transition-colors font-medium">Legal</a>
-            <a href="#" className="hover:text-[#004488] transition-colors font-medium">Privacy Notice</a>
-            <a href="#" className="hover:text-[#004488] transition-colors font-medium">Access to Information</a>
-          </div>
+          <p className="font-medium">© {new Date().getFullYear()} World Bank Group. All rights reserved.</p>
         </div>
       </footer>
 
